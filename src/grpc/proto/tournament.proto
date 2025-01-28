@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package tournaments;
+
+message Tournament {
+  int32 id = 1;
+  string name = 2;
+  string location = 3;
+  int32 year = 4;
+  string surface = 5;
+}
+
+message TournamentInput {
+  string name = 1;
+  string location = 2;
+  string date = 3;
+  string surface = 4;
+}
+
+service TournamentService {
+  rpc GetTournaments (SortInput) returns (TournamentListResponse);
+  rpc GetTournament (TournamentRequest) returns (Tournament);
+  rpc CreateTournament (TournamentInput) returns (Tournament);
+  rpc UpdateTournament (TournamentUpdateRequest) returns (Tournament);
+  rpc DeleteTournament (TournamentDeleteRequest) returns (DeleteResponse);
+}
+
+message TournamentListResponse {
+  repeated Tournament tournaments = 1;
+}
+
+message TournamentRequest {
+  int32 id = 1;
+}
+
+message TournamentUpdateRequest {
+  int32 id = 1;
+  TournamentInput tournamentInput = 2;
+}
+
+message TournamentDeleteRequest {
+  int32 id = 1;
+}
+
+message DeleteResponse {
+  bool success = 1;
+  string message = 2;
+  string code = 3;
+}
+
+message SortInput {
+  string field = 1;
+  string order = 2; 
+}

@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+package matches;
+
+import "player.proto";
+import "tournament.proto";
+
+message Match {
+  int32 id = 1;
+  Player player1 = 2;
+  Player player2 = 3;
+  Tournament tournament = 4;
+  string score = 5;
+  Player winner = 6;
+  int32 duration_minutes = 7;
+}
+
+message MatchInput {
+  int32 player1Id = 1;
+  int32 player2Id = 2;
+  int32 score1 = 3;
+  int32 score2 = 4;
+  int32 tournamentId = 5;
+  string round = 6;
+}
+
+service MatchService {
+  rpc GetMatches (SortInput) returns (MatchListResponse);
+  rpc GetMatch (MatchRequest) returns (Match);
+  rpc CreateMatch (MatchInput) returns (Match);
+  rpc UpdateMatch (MatchUpdateRequest) returns (Match);
+  rpc DeleteMatch (MatchDeleteRequest) returns (DeleteResponse);
+}
+
+message MatchListResponse {
+  repeated Match matches = 1;
+}
+
+message MatchRequest {
+  int32 id = 1;
+}
+
+message MatchUpdateRequest {
+  int32 id = 1;
+  MatchInput matchInput = 2;
+}
+
+message MatchDeleteRequest {
+  int32 id = 1;
+}
+
+message DeleteResponse {
+  bool success = 1;
+  string message = 2;
+  string code = 3;
+}
+
+message SortInput {
+  string field = 1;
+  string order = 2; 
+}

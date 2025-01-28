@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package players;
+
+message Player {
+  int32 id = 1;
+  string name = 2; 
+  int32 age = 3;
+  string country = 4;
+  int32 ranking = 5;
+}
+
+message PlayerInput {
+  string name = 1; 
+  int32 age = 2;
+  string country = 3;
+  int32 ranking = 4;
+}
+
+message PlayerFilterInput {
+  string name = 1;
+  string country = 2;
+  int32 minAge = 3;
+  int32 maxAge = 4;
+  int32 minRanking = 5;
+  int32 maxRanking = 6;
+}
+
+message DeleteResponse {
+  bool success = 1;
+  string message = 2;
+  string code = 3;
+}
+
+service PlayerService {
+  rpc GetPlayers (PlayerFilterInput) returns (PlayerListResponse);
+  rpc GetPlayer (PlayerRequest) returns (Player);
+  rpc CreatePlayer (PlayerInput) returns (Player);
+  rpc UpdatePlayer (PlayerUpdateRequest) returns (Player);
+  rpc DeletePlayer (PlayerDeleteRequest) returns (DeleteResponse);
+}
+
+message PlayerListResponse {
+  repeated Player players = 1;
+}
+
+message PlayerRequest {
+  int32 id = 1;
+}
+
+message PlayerUpdateRequest {
+  int32 id = 1;
+  PlayerInput playerInput = 2;
+}
+
+message PlayerDeleteRequest {
+  int32 id = 1;
+}

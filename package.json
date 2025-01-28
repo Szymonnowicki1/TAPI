@@ -1,0 +1,28 @@
+{
+  "name": "projekt-tenis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/rest/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.11.3",
+    "@grpc/grpc-js": "^1.12.5",
+    "apollo-server": "^3.13.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "docusaurus": "^1.14.7",
+    "esm": "^3.2.25",
+    "express": "^4.21.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.10.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "description": ""
+}

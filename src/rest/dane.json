@@ -1,0 +1,415 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Iga Świątek",
+      "age": 22,
+      "country": "Poland",
+      "ranking": 55,
+      "tournaments": [
+        {
+          "id": 1,
+          "name": "Australian Open",
+          "year": 2025,
+          "location": "Melbourne, Australia",
+          "surface": "Hard"
+        },
+        {
+          "id": 2,
+          "name": "French Open",
+          "year": 2025,
+          "location": "Paris, France",
+          "surface": "Clay"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Aryna Sabalenka",
+      "age": 25,
+      "country": "Belarus",
+      "ranking": 2,
+      "tournaments": [
+        {
+          "id": 1,
+          "name": "Australian Open",
+          "year": 2025,
+          "location": "Melbourne, Australia",
+          "surface": "Hard"
+        },
+        {
+          "id": 3,
+          "name": "Wimbledon",
+          "year": 2025,
+          "location": "London, UK",
+          "surface": "Grass"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Jessica Pegula",
+      "age": 29,
+      "country": "USA",
+      "ranking": 3,
+      "tournaments": [
+        {
+          "id": 2,
+          "name": "French Open",
+          "year": 2025,
+          "location": "Paris, France",
+          "surface": "Clay"
+        },
+        {
+          "id": 4,
+          "name": "US Open",
+          "year": 2025,
+          "location": "New York, USA",
+          "surface": "Hard"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Elena Rybakina",
+      "age": 24,
+      "country": "Kazakhstan",
+      "ranking": 4,
+      "tournaments": [
+        {
+          "id": 5,
+          "name": "Wimbledon",
+          "year": 2025,
+          "location": "London, UK",
+          "surface": "Grass"
+        },
+        {
+          "id": 1,
+          "name": "Australian Open",
+          "year": 2025,
+          "location": "Melbourne, Australia",
+          "surface": "Hard"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Karolina Pliskova",
+      "age": 32,
+      "country": "Czech Republic",
+      "ranking": 5,
+      "tournaments": [
+        {
+          "id": 2,
+          "name": "French Open",
+          "year": 2025,
+          "location": "Paris, France",
+          "surface": "Clay"
+        },
+        {
+          "id": 6,
+          "name": "US Open",
+          "year": 2025,
+          "location": "New York, USA",
+          "surface": "Hard"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Ons Jabeur",
+      "age": 28,
+      "country": "Tunisia",
+      "ranking": 6,
+      "tournaments": [
+        {
+          "id": 7,
+          "name": "Australian Open",
+          "year": 2025,
+          "location": "Melbourne, Australia",
+          "surface": "Hard"
+        },
+        {
+          "id": 8,
+          "name": "French Open",
+          "year": 2025,
+          "location": "Paris, France",
+          "surface": "Clay"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Belinda Bencic",
+      "age": 27,
+      "country": "Switzerland",
+      "ranking": 7,
+      "tournaments": [
+        {
+          "id": 9,
+          "name": "Wimbledon",
+          "year": 2025,
+          "location": "London, UK",
+          "surface": "Grass"
+        },
+        {
+          "id": 10,
+          "name": "US Open",
+          "year": 2025,
+          "location": "New York, USA",
+          "surface": "Hard"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Maria Sakkari",
+      "age": 29,
+      "country": "Greece",
+      "ranking": 8,
+      "tournaments": [
+        {
+          "id": 2,
+          "name": "French Open",
+          "year": 2025,
+          "location": "Paris, France",
+          "surface": "Clay"
+        },
+        {
+          "id": 6,
+          "name": "US Open",
+          "year": 2025,
+          "location": "New York, USA",
+          "surface": "Hard"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Simona Halep",
+      "age": 32,
+      "country": "Romania",
+      "ranking": 9,
+      "tournaments": [
+        {
+          "id": 4,
+          "name": "US Open",
+          "year": 2025,
+          "location": "New York, USA",
+          "surface": "Hard"
+        },
+        {
+          "id": 3,
+          "name": "Wimbledon",
+          "year": 2025,
+          "location": "London, UK",
+          "surface": "Grass"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Coco Gauff",
+      "age": 19,
+      "country": "USA",
+      "ranking": 10,
+      "tournaments": [
+        {
+          "id": 1,
+          "name": "Australian Open",
+          "year": 2025,
+          "location": "Melbourne, Australia",
+          "surface": "Hard"
+        },
+        {
+          "id": 9,
+          "name": "Wimbledon",
+          "year": 2025,
+          "location": "London, UK",
+          "surface": "Grass"
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": 101,
+      "tournament_id": 1,
+      "round": "Final",
+      "player1_id": 1,
+      "player2_id": 2,
+      "score": "6-2, 7-6",
+      "winner_id": 1,
+      "duration_minutes": 120
+    },
+    {
+      "id": 102,
+      "tournament_id": 1,
+      "round": "Semifinal",
+      "player1_id": 2,
+      "player2_id": 3,
+      "score": "6-4, 6-3",
+      "winner_id": 2,
+      "duration_minutes": 90
+    },
+    {
+      "id": 103,
+      "tournament_id": 2,
+      "round": "Quarterfinal",
+      "player1_id": 4,
+      "player2_id": 5,
+      "score": "7-5, 4-6, 6-4",
+      "winner_id": 5,
+      "duration_minutes": 150
+    },
+    {
+      "id": 104,
+      "tournament_id": 3,
+      "round": "Round of 16",
+      "player1_id": 1,
+      "player2_id": 4,
+      "score": "6-2, 6-4",
+      "winner_id": 1,
+      "duration_minutes": 90
+    },
+    {
+      "id": 105,
+      "tournament_id": 3,
+      "round": "Quarterfinal",
+      "player1_id": 2,
+      "player2_id": 6,
+      "score": "6-3, 6-2",
+      "winner_id": 2,
+      "duration_minutes": 75
+    },
+    {
+      "id": 106,
+      "tournament_id": 4,
+      "round": "Final",
+      "player1_id": 5,
+      "player2_id": 7,
+      "score": "6-3, 6-2",
+      "winner_id": 5,
+      "duration_minutes": 95
+    },
+    {
+      "id": 107,
+      "tournament_id": 5,
+      "round": "Round of 16",
+      "player1_id": 8,
+      "player2_id": 10,
+      "score": "7-5, 6-3",
+      "winner_id": 8,
+      "duration_minutes": 85
+    },
+    {
+      "id": 108,
+      "tournament_id": 6,
+      "round": "Semifinal",
+      "player1_id": 9,
+      "player2_id": 3,
+      "score": "6-4, 6-7, 6-2",
+      "winner_id": 9,
+      "duration_minutes": 155
+    },
+    {
+      "id": 109,
+      "tournament_id": 7,
+      "round": "Final",
+      "player1_id": 10,
+      "player2_id": 2,
+      "score": "6-4, 3-6, 6-3",
+      "winner_id": 10,
+      "duration_minutes": 120
+    },
+    {
+      "id": 110,
+      "tournament_id": 8,
+      "round": "Semifinal",
+      "player1_id": 6,
+      "player2_id": 7,
+      "score": "7-5, 6-3",
+      "winner_id": 6,
+      "duration_minutes": 95
+    },
+    {
+      "id": null,
+      "score": "6-2, 6-3",
+      "player1_id": 2,
+      "player2_id": "5",
+      "tournament_id": 4,
+      "duration_minutes": 90
+    },
+    {
+      "id": 111,
+      "score": "6-2, 6-3",
+      "player1_id": 2,
+      "player2_id": "5",
+      "tournament_id": 4,
+      "duration_minutes": 90
+    }
+  ],
+  "tournaments": [
+    {
+      "id": 1,
+      "name": "Australian Open",
+      "year": 2025,
+      "location": "Melbourne, Australia",
+      "surface": "Hard",
+      "matches": [
+        101,
+        104,
+        109
+      ]
+    },
+    {
+      "id": 2,
+      "name": "French Open",
+      "year": 2025,
+      "location": "Paris, France",
+      "surface": "Clay",
+      "matches": [
+        102,
+        103
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Roland Garos",
+      "year": 2022,
+      "surface": "maka",
+      "matches": [
+        104,
+        106
+      ]
+    },
+    {
+      "id": 4,
+      "name": "US Open",
+      "year": 2025,
+      "location": "New York, USA",
+      "surface": "Hard",
+      "matches": [
+        106,
+        107
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Indian Wells",
+      "year": 2025,
+      "location": "California, USA",
+      "surface": "Hard",
+      "matches": [
+        108
+      ]
+    },
+    {
+      "id": 6,
+      "name": "US Open",
+      "year": 2025,
+      "location": "New York, USA",
+      "surface": "Hard"
+    }
+  ]
+}
